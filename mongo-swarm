@@ -1,0 +1,2 @@
+Create Docker on swarm by using below command
+docker service create --replicas 1 --network leng-freelancer --mount type=volume,source=leng-mongo,target=/data/db --mount type=volume,source=leng-mongo-cfg,target=/data/configdb --constraint 'node.labels.role.w == 1' --name leng-mongo mongo:4.0 
