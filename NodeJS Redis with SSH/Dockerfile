@@ -1,7 +1,7 @@
 #NodeJS Redis with SSH
 #Auther rc@sarv.com
 
-ROM node:carbon
+FROM node:carbon
 
 RUN wget http://download.redis.io/redis-stable.tar.gz && \
     tar xvzf redis-stable.tar.gz && \
